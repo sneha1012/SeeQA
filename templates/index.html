@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>VQA Web App</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+
+</head>
+<body>
+    <h1 id="heading">VQA Web App</h1>
+    <form id="predict-form" class="box" enctype="multipart/form-data">
+
+        <label for="image_url">Image URL:</label>
+        <input type="text" id="image_url" name="image_url"><br><br>
+
+        <label for="image">Image:</label>
+        <input type="file" id="image" name="image"><br><br>
+<!-- 
+        <label for="question">Question:</label>
+        <input type="text" id="question" name="question"><br><br> -->
+
+        <input type="button" value="Ask?" onclick="submitForm()">
+
+        <div id="result">
+            <p id="answer">Answer: </p>
+            <p id="answer_type">Answer type: </p>
+            <p id="answerability">Answerable: </p> 
+        </div>
+    </form>
+    
+
+</body>
+<script src="{{ url_for('static', filename='script.js') }}"></script>
+</html>
