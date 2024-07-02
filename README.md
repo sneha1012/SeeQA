@@ -83,7 +83,7 @@ The architecture goes as follows:
 Here is the illustration of the model architecture
 
 <p align="center">
-  <img src="Images/model_architecture.png" alt="Training Losses" width="500"/>
+  <img src="https://github.com/yousefkotp/Visual-Question-Answering/blob/main/Images/model_architecture.png" alt="Training Losses" width="500"/>
 </p>
 
 - **Note:** I removed the drop out from answerability linear layer as it was causing a lot of noise in training answerability.
@@ -96,13 +96,13 @@ The best model was recorded at epoch 45 so, we will use that model for evaluatio
 ### Loss Graphs
 
 <p align="center">
-  <img src="Images/training_losses.png" alt="Training Losses" width="500"/>
+  <img src="https://github.com/yousefkotp/Visual-Question-Answering/blob/main/Images/training_losses.png" alt="Training Losses" width="500"/>
 </p>
 
 ### Accuracy Graphs
 
 <p align="center">
-  <img src="Images/training_vizwiz_accuracy.png" alt="Training VizWiz Accuracy" width="500"/>
+  <img src="https://github.com/yousefkotp/Visual-Question-Answering/blob/main/Images/training_vizwiz_accuracy.png" alt="Training VizWiz Accuracy" width="500"/>
 </p>
 
 ## Evaluation
@@ -110,7 +110,7 @@ According to evaluation in [VizWiz VQA Challenge](https://vizwiz.org/tasks-and-d
 - **VizWiz Accuracy:** Given an image and question about it, the task is to predict an accurate answer. Inspired by the VQA challenge, we use the following accuracy evaluation metric:
 
 <p align="center">
-  <img src="Images/VizWiz_accuracy.png" alt="Figure of the mathematical formula which is accuracy equals minimum of either one or the number of humans that provided that answer divided by three." width="500"/>
+  <img src="https://github.com/yousefkotp/Visual-Question-Answering/blob/main/Images/VizWiz_accuracy.png" alt="Figure of the mathematical formula which is accuracy equals minimum of either one or the number of humans that provided that answer divided by three." width="500"/>
 </p>
 VizWiz accuracy metric is the minimum between 1 and the number of humans that provided that answer divided by 3.
 
