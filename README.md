@@ -105,15 +105,6 @@ The best model was recorded at epoch 45 so, we will use that model for evaluatio
   <img src="https://github.com/yousefkotp/Visual-Question-Answering/blob/main/Images/training_vizwiz_accuracy.png" alt="Training VizWiz Accuracy" width="500"/>
 </p>
 
-## Evaluation
-According to evaluation in [VizWiz VQA Challenge](https://vizwiz.org/tasks-and-datasets/vqa/), we will use the following metrics to evaluate our model:
-- **VizWiz Accuracy:** Given an image and question about it, the task is to predict an accurate answer. Inspired by the VQA challenge, we use the following accuracy evaluation metric:
-
-<p align="center">
-  <img src="https://github.com/yousefkotp/Visual-Question-Answering/blob/main/Images/VizWiz_accuracy.png" alt="Figure of the mathematical formula which is accuracy equals minimum of either one or the number of humans that provided that answer divided by three." width="500"/>
-</p>
-VizWiz accuracy metric is the minimum between 1 and the number of humans that provided that answer divided by 3.
-
 - **Answerability**: given an image and question about it, the task is to predict if the visual question cannot be answered (with a confidence score in that prediction). The confidence score provided by a prediction model is for ‘answerable’ and should be in [0,1]. We use [Python’s average precision evaluation metric](https://scikit-learn.org/stable/modules/generated/sklearn.metrics.average_precision_score.html) which computes the weighted mean of precisions under a precision-recall curve.
 
 ### Results
